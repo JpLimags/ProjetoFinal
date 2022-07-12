@@ -1,3 +1,4 @@
+#include "inc.h"
 struct pgm{
 	int tipo;
 	int c;
