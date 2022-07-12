@@ -4,7 +4,7 @@ void readPGMImage(struct pgm *pio, char *filename)
     FILE *fp;
     char ch;
 
-    if (!(fp = fopen(filename, "r")))
+    if (!(fp = fopen(filename, "w")))
     {
         perror("Error...");
         exit(1);

@@ -16,17 +16,18 @@ int main(){
     dir = opendir("./oncotex_pgm/datasets/");
 
     int tam, count = 0;
-    if (dir)
+
+    if (dir !=  NULL)
     {
-
-        while ((pImgArq = readdir(dir)) != NULL)
-        {
-
+        for(;;){
+            pImgArq = readdir(dir);
+            if ( pImgArq == NULL) break;
             strcpy(nomeArquivo[iArquivo], "./oncotex_pgm/datasets/");
             identificador[iArquivo] = pImgArq->d_name[0];
             strcat(nomeArquivo[iArquivo], pImgArq->d_name);
             iArquivo++;
         }
+
     }
 
     for (int i = 2; i < iArquivo; i++)
