@@ -1,3 +1,7 @@
+#ifndef __INC_H_
+#define __INC_H_
+
+#include "inc.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -8,3 +12,10 @@
 #define MAXF 1000
 #define MAXN 100
 #define T 8
+
+#endif // __INC_H_
+
+
+
+
+

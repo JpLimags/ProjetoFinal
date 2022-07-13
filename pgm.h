@@ -1,3 +1,6 @@
+#ifndef __PGM_H_
+#define __PGM_H_
+
 #include "inc.h"
 struct pgm{
 	int tipo;
@@ -7,11 +10,6 @@ struct pgm{
 	unsigned char *pData;
 };
 //criação das váriaveis que serão utilizadas na main
-struct pgm img;
-struct pgm *filterImg;
-unsigned char *hist;
-char nomeArquivo[MAXF][MAXN];
-DIR *dir;
-struct dirent *pImgArq;
-int iArquivo = 0;
-char identificador[TAMCHAR];
+
+
+#endif // __PGM_H_
