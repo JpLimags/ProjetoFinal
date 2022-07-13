@@ -1,11 +1,16 @@
 #include "inc.h"
 #include "pgm.h"
 #include "prop.h"
-#include "lib.h"
-
 
 int main(){
-
+    struct pgm img;
+    struct pgm *filterImg;
+    unsigned char *hist;
+    char nomeArquivo[MAXF][MAXN];
+    DIR *dir;
+    struct dirent *pImgArq;
+    int iArquivo = 0;
+    char identificador[TAMCHAR];
 
     clock_t begin, end;
 	double time_per_img, time_total=0;
